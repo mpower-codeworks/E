@@ -2,6 +2,8 @@
 
 E is a 483-byte Win32 Telnet server written in x86 assembly and built with MASM and Crinkler. It listens on port 5555, accepts one connection, sends back its own name "E" and exits. I started with a simple C server to see how small the same program could become in assembly.
 
+E runs on all versions of Windows from 2000 to 11.
+
 The entire history for this project in source code is included. The file names contain the version numbers and brief descriptions. Starting with 000 is the C telnet server, extremely basic. I forget why I had the sleep timer in there but it is removed later anyway.
 
 Every build was tested by connecting from an Apple II.
