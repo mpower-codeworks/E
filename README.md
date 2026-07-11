@@ -6,7 +6,7 @@ The entire history for this project in source code is included. The file names c
 
 Every build was tested by connecting from an Apple II.
 
-Version 001 is the direct conversion to x86. Version 002 begins the process of breaking everything down. By version 006 we're using Crinkler and really going for it. At 015 we leave off at 483 bytes. I think there's a bit more to got. More on that in a bit.
+Version 001 is the direct conversion to x86. Version 002 begins the process of breaking everything down. By version 006 we're using Crinkler and really going for it. At 015 we leave off at 483 bytes. I think there may be more to go, more on that in a bit.
 
 For me the biggest surprise was this:
 ```
