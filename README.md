@@ -8,7 +8,7 @@ The entire history for this project in source code is included. The file names c
 
 Every build was tested by connecting from an Apple II.
 
-Version 001 is the direct conversion to x86. Version 002 begins the process of breaking everything down. By version 006 we're using Crinkler and really going for it. At 015 we leave off at 483 bytes. I think there may be more to go, more on that in a bit.
+Version 001 is the direct conversion to x86. Version 002 begins the process of breaking everything down. By version 006 we're using Crinkler and really going for it. At 015 we leave off at 483 bytes. I think there may be more to go, but this is good for now.
 
 For me the biggest surprise was this:
 ```
@@ -19,5 +19,3 @@ convert orig C to assembly               -  3072 bytes MASM
 The largest size reduction of the entire project by far was accomplished with the linker and no code changes. I quite wanted to get a Tiny C Conplier (TCC) build working to see the result, but I couldn't get around needing to have winsock2.h sitting there next to e.c and that voids the whole point of the project. I didn't try GCC.
 
 The style used was commenting out old code instead of removing it. A number of things went in and out several times along the way. I didn't preserve the failues.
-
-I just noticed I forgot to take PORT out. Oh well.
