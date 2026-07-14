@@ -21,7 +21,7 @@ The largest size reduction of the entire project by far was accomplished with th
 The style used was commenting out old code instead of removing it. A number of things went in and out several times along the way. I didn't preserve the failues.
 
 ```
-Walkdown from 90K to 482 bytes:
+Walkdown from 90K to 483 bytes:
 
 start with working version in C          - 90112 bytes exe size
 first version in MASM                    -  3072 bytes
