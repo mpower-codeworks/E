@@ -21,8 +21,10 @@ The largest size reduction of the entire project by far was accomplished with th
 The style used was commenting out old code instead of removing it. A number of things went in and out several times along the way. I didn't preserve the failues.
 
 ```
-start with working version in C          - 90112 bytes
-first version in MASM                    -  3072 bytes exe size
+Walkdown from 90K to 482 bytes:
+
+start with working version in C          - 90112 bytes exe size
+first version in MASM                    -  3072 bytes
 replace invokes with push/call           -  3072 bytes
 remove dup error handles                 -  3072 bytes
 first crinker build                      -   558 bytes
@@ -39,5 +41,5 @@ reduce wsa to actual size (400)          -   509 bytes
 shortened the message to server name "E" -   493 bytes
 let wsacleanup dispoose of the socket    -   487 bytes
 fall-thu redundant INVALID_SOCKET check  -   484 bytes
-moved addr_in from data? to data         -  483 bytes
+moved addr_in from data? to data         -   483 bytes
 ```
