@@ -19,3 +19,25 @@ convert orig C to assembly               -  3072 bytes MASM
 The largest size reduction of the entire project by far was accomplished with the linker and no code changes. I quite wanted to get a Tiny C Conplier (TCC) build working to see the result, but I couldn't get around needing to have winsock2.h sitting there next to e.c and that voids the whole point of the project. I didn't try GCC.
 
 The style used was commenting out old code instead of removing it. A number of things went in and out several times along the way. I didn't preserve the failues.
+
+```
+start with working version in C          - 90112 bytes
+first version in MASM                    -  3072 bytes exe size
+replace invokes with push/call           -  3072 bytes
+remove dup error handles                 -  3072 bytes
+first crinker build                      -   558 bytes
+remove htons import & hard-code port     -   551 bytes
+remove ZeroMemory (win does the init)    -   533 bytes
+remove sleep - not needed                -   529 bytes
+switched to ebx/esi                      -   521 bytes
+   ebx = listening socket
+   esi = client socket
+combined mov AF_INET and mov 0B315h      -   517 bytes
+switched IPPROTO to eax protocol zero    -   515 bytes
+removed shutdown - let socket default    -   510 bytes
+reduce wsa to actual size (400)          -   509 bytes
+shortened the message to server name "E" -   493 bytes
+let wsacleanup dispoose of the socket    -   487 bytes
+fall-thu redundant INVALID_SOCKET check  -   484 bytes
+moved addr_in from data? to data         -  483 bytes
+```
