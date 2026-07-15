@@ -24,6 +24,7 @@ The style used was commenting out old code instead of removing it. A number of t
 Walkdown from 90K to 483 bytes:
 
 start with working version in C          - 90112 bytes exe size
+original C no CRT & heavy CL size opts   -  1536 bytes 
 first version in MASM                    -  3072 bytes
 replace invokes with push/call           -  3072 bytes
 remove dup error handles                 -  3072 bytes
