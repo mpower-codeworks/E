@@ -2,13 +2,13 @@
 
 E is a 483-byte sizecoding experiment Win32 Telnet server written in x86 assembly and built with MASM and Crinkler. It listens on port 5555, accepts one connection, sends back its own name "E" and exits. I started with a simple C server to see how small the same program could become in assembly.
 
-E runs on all versions of Windows from 2000 to 11.
+### E runs on all versions of Windows from 2000 to 11.
 
 <img src="images/E_EXMPL.png" align="right" width="300" alt="E Logo">
 
 The entire history for this project in source code is included. The file names contain the version numbers and brief descriptions. Starting with 000 is the C telnet server, extremely basic. I forget why I had the sleep timer in there but it is removed later anyway.
 
-Every build was tested by connecting from an Apple II.
+### Every build was tested by connecting from an Apple II.
 
 Version 001 is the direct conversion to x86. Version 002 begins the process of breaking everything down. By version 006 we're using Crinkler and really going for it. At 015 we leave off at 483 bytes. I think there may be more to go, but this is good for now.
 
