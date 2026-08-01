@@ -2,7 +2,7 @@ cls
 @echo off
 setlocal
 
-echo Building e.asm with Crinkler...
+echo Building e.asm with Crinkler... 
 
 if exist e.obj del e.obj
 if exist e.exe del e.exe
