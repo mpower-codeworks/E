@@ -69,4 +69,5 @@ shortened the message to server name "E" -   493 bytes
 let wsacleanup dispoose of the socket    -   487 bytes
 fall-thu redundant INVALID_SOCKET check  -   484 bytes
 moved addr_in from data? to data         -   483 bytes
+
 ```
